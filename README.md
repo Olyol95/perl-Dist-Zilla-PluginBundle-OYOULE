@@ -4,7 +4,7 @@ Dist::Zilla::PluginBundle::OYOULE - Dist::Zilla plugin configuration for Author/
 
 # VERSION
 
-version 1.0.0
+version 1.1.0
 
 # SYNOPSIS
 
@@ -46,6 +46,13 @@ A personal plugin bundle for [Dist::Zilla](https://metacpan.org/pod/Dist%3A%3AZi
 
     When false, the repo metadata will instead point to my
     private git instance.
+
+- `regenerate_license`
+
+    Boolean indicating whether or not to copy the generated
+    license back into the distribution root.
+
+    Defaults to 1.
 
 # SEE ALSO
 
