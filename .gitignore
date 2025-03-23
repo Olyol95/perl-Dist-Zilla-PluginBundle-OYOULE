@@ -1,0 +1,7 @@
+junit_output.xml
+*.swp
+*.tar.gz
+**/cover_db
+**/local
+**/.build
+**/Dist-Zilla-PluginBundle-OYOULE*
