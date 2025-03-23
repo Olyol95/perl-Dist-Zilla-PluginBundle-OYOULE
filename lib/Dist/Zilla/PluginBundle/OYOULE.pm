@@ -89,6 +89,25 @@ has use_github => (
     },
 );
 
+=item C<regenerate_license>
+
+Boolean indicating whether or not to copy the generated
+license back into the distribution root.
+
+Defaults to 1.
+
+=cut
+
+has regenerate_license => (
+    is      => 'ro',
+    isa     => 'Bool',
+    lazy    => 1,
+    default => sub {
+        my $self = shift;
+        return $self->_payload('regenerate_license' => 1);
+    },
+);
+
 =back
 
 =cut
@@ -151,11 +170,14 @@ sub _starter_config {
 
     my %config = (
         revision   => 5,
-        regenerate => ['LICENSE'],
     );
 
     if ($self->use_darkpan) {
         $config{'-remove'} = ['UploadToCPAN'];
+    }
+
+    if ($self->regenerate_license) {
+        push @{ $config{regenerate} }, 'LICENSE';
     }
 
     return \%config;
