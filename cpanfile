@@ -6,6 +6,7 @@ requires 'Dist::Zilla::Plugin::Prereqs::FromCPANfile';
 requires 'Dist::Zilla::Plugin::UploadToDarkPAN';
 requires 'Dist::Zilla::PluginBundle::Starter';
 requires 'Dist::Zilla::Role::PluginBundle::Easy';
+requires 'ExtUtils::MakeMaker', '7.78';
 requires 'perl', 'v5.26';
 requires 'Moose';
 requires 'namespace::autoclean';

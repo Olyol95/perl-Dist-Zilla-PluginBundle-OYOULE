@@ -172,7 +172,8 @@ sub _starter_config {
     my $self = shift;
 
     my %config = (
-        revision   => 5,
+        revision                 => 5,
+        'MakeMaker.eumm_version' => '7.78',
     );
 
     if ($self->use_darkpan) {
