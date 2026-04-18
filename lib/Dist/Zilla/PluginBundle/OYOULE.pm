@@ -3,6 +3,8 @@ package Dist::Zilla::PluginBundle::OYOULE;
 use v5.26;
 use strictures 2;
 
+# VERSION
+
 use Moose;
 use namespace::autoclean;
 
@@ -147,6 +149,7 @@ sub _plugins {
                 'repository.type' => 'git',
             },
         ],
+        'OurPkgVersion',
         'PodWeaver',
         'Prereqs::FromCPANfile',
         [

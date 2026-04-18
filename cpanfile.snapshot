@@ -1228,6 +1228,21 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  Dist-Zilla-Plugin-OurPkgVersion-0.21
+    pathname: P/PL/PLICEASE/Dist-Zilla-Plugin-OurPkgVersion-0.21.tar.gz
+    provides:
+      Dist::Zilla::Plugin::OurPkgVersion 0.21
+    requirements:
+      Dist::Zilla 6.00
+      Dist::Zilla::Role::FileFinderUser 0
+      Dist::Zilla::Role::FileMunger 0
+      Dist::Zilla::Role::PPI 0
+      ExtUtils::MakeMaker 0
+      Moose 0
+      MooseX::Types::Perl 0
+      PPI 0
+      namespace::autoclean 0
+      perl 5.014
   Dist-Zilla-Plugin-Pod2Readme-0.004
     pathname: D/DA/DAGOLDEN/Dist-Zilla-Plugin-Pod2Readme-0.004.tar.gz
     provides:

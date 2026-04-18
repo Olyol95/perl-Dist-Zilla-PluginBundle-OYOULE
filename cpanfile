@@ -1,5 +1,6 @@
 # https://metacpan.org/pod/distribution/Module-CPANfile/lib/cpanfile.pod
 
+requires 'Dist::Zilla::Plugin::OurPkgVersion';
 requires 'Dist::Zilla::Plugin::PodWeaver';
 requires 'Dist::Zilla::Plugin::Prereqs::FromCPANfile';
 requires 'Dist::Zilla::Plugin::UploadToDarkPAN';
